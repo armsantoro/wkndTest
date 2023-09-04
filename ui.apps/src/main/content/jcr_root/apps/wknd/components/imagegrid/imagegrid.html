@@ -1,0 +1,20 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.css @ categories='wknd.imagegrid'}"></sly>
+<h1 class="page_title"> CSS Image Grid </h1>
+<div class="row" data-sly-use.imageGrid="com.adobe.aem.guides.wknd.core.models.ImageGridModel">
+    <sly data-sly-list.adventure="${imageGrid.adventure}">
+        <div class="container">
+            <div class="test_box box-${adventureList.count} col-xs-6 col-md-4"
+                style="background-image: url('${adventure.imagePath @ context='style'}');">
+                <div class="inner">
+                    <a href="${adventure.pagePath @ extension='html'}" class="test_click">
+                        <div class="flex_this">
+                            <h1 class="test-title">${adventure.title}</h1>
+                            <span class="test_link">${adventure.ctaLabel}</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </sly>
+</div>
