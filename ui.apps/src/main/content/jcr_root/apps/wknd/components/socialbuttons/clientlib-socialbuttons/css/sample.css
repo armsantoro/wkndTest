@@ -1,0 +1,13 @@
+.socialButtons{
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem;
+}
+.btn{
+    width: 55px;
+    display: inline-block;
+    height: 36px;
+    line-height: 2;
+    margin: 10px;
+    color: #f7f7f7;
+}

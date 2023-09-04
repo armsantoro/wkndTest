@@ -1,0 +1,12 @@
+<div data-sly-test="${wcmmode.edit}" class="cq-placeholder"
+     data-emptytext="${'{0} - {1}'@format=[component.title, 'Please use View as Published']}"></div>
+<div class="socialButtons" data-sly-list="${resource.listChildren}">
+    <a data-sly-repeat.social="${item.listChildren}" class="btn btn-primary"
+       style="background-color: ${social.colorSelect @context='styleToken'};" href="${social.ctaLink}" role="button">
+        <i class="${social.selectSocial}">
+        </i>
+    </a>
+</div>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.css @ categories='wknd.pippo'}"></sly>
+<sly data-sly-call="${clientlib.css @ categories='wknd.vendors'}"></sly>

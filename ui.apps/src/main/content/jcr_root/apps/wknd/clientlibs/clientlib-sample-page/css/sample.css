@@ -1,0 +1,7 @@
+.cmp-helloworld__background{
+    background-image: url("/etc.clientlibs/wknd/clientlibs/clientlib-sample-page/resources/images/favicons/favicon-512.png");
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -29,3 +29,6 @@
 
 <!--/* Favicons */-->
 <sly data-sly-include="favicons.html"></sly>
+<div data-sly-resource="${'topbaner' @ resourceType='/apps/wknd/components/topbanner'}"></div>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.css @ categories='wknd.myfirstpageclientlib'}"></sly>

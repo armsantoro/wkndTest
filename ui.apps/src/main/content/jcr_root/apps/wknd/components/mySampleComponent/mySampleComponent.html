@@ -1,0 +1,6 @@
+<div class="mysamplecomponent2">
+    <h2>${properties.title}</h2>
+    <div data-sly-test="${properties.description}" data-sly-element="${properties.descriptionType ? properties.descriptionType : 'div'}">${properties.description}</div>
+    <img data-sly-test="${properties.image}" src="${properties.image}" alt="${properties.title} Image">
+    <img data-sly-test="${!properties.image && properties.imagePath}" src="${properties.imagePath}" alt="${properties.title} Image">
+</div>
